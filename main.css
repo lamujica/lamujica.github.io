@@ -122,8 +122,9 @@ nav ul {
  }
 
  .about{
-  padding: 2em 4em;
-  border: 3px solid #fff8dc;
+  padding: 2em 2em;
+  border: 3px solid #0e0b02;
+  font-size: 1em;
  }
 
  .skills{
@@ -138,7 +139,7 @@ nav ul {
 
  .certs{
   padding: 2em 4em;
-  border: 3px solid #8f8ad6;
+  border: 3px solid #d6c48a;
  }
 /*************************************************** Footer *************************************************/
 
