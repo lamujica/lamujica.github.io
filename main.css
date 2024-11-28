@@ -69,7 +69,8 @@ nav ul {
 
 footer {
   padding: 4em 0 ;
-  background-color: #1d242a;
+  /* background-color: #1d242a; */
+  background-color: blue;
   text-align: center;
   list-style:none;
   
