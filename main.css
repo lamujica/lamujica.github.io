@@ -15,11 +15,12 @@ article, aside, details, figcaption, figure,
   
 
 /****************************************************Nav Bar*************************************************/
-nav ul {
-    position: sticky;
+
+nav {
+    position: fixed;
     margin: 1em 0;
     width: 100%;
-    top: 0;
+    top: 0px;
     font-family: 'Montserrat';
     text-transform: uppercase;
     list-style-type: none;
@@ -112,7 +113,7 @@ nav ul {
 
  }
  .banner{
-  padding: 4em 1em;
+  padding: 10em 1em;
   align-items: center;
   border: 3px solid #357724;
  
