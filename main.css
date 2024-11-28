@@ -31,6 +31,10 @@ nav {
     border-bottom: 1px solid #bbb;
 
   }
+
+  nav ul{
+    display: inline;
+  }
   
   nav li {
     float: right;
@@ -63,6 +67,10 @@ nav {
   }
 
  @media screen and (max-width: 746px){
+
+   .navbar ul {
+    display: inline;
+   }
   .navbar ul > li> a:not(.active){
     display: none;
   }
