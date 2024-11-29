@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href= 'assets/css/swiper-bundle.min.css'>
 
 </head>
 <body> 
@@ -68,10 +70,49 @@
 
 
     <section id = "certs">
-        <div class = "certs"> 
+        <div class = "certs container swiper"> 
             <h2> Certifications</h2>
-            <p> Some of the certifications I have acquired:</p>
-        </div>
+           <div class = "slide-certs">   
+                <div class = "card-wrapper swiper-wrapper">
+                    <div class= "card swiper-slide">
+                        <div class = "image-box">
+                            <img src = "assets/images/certificate.png" alt = "">
+                        </div>
+                     
+                    </div>
+                    <div class= "card swiper-slide">
+                        <div class = "image-box">
+                            <img src = "assets/images/certificate2.jpg" alt = "">
+                        </div>
+                     
+                    </div>
+                    <div class= "card swiper-slide">
+                        <div class = "image-box">
+                            <img src = "assets/images/certificate3.png" alt = "">
+                        </div>
+                     
+                    </div>
+                    <div class= "card swiper-slide">
+                        <div class = "image-box">
+                            <img src = "assets/images/certificate4.png" alt = "">
+                        </div>             
+                    </div>
+                    <div class= "card swiper-slide">
+                        <div class = "image-box">
+                            <img src = "assets/images/certificate5.png" alt = "">
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class='swiper-button-next swiper-navBtn'></div>
+                <div class='swiper-button-prev swiper-navBtn'></div>
+                <div class="swiper-pagination"></div>
+                
+        </div>  
+        <script src = "assets/js/swiper.min.js"></script>
+        <script src = "assets/js/main.js"></script>
+     </div>
+
     </section>
     <section id = "contact">
 

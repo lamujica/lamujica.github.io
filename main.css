@@ -1,19 +1,13 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
 
-/**** RESET ****/
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
-
-article, aside, details, figcaption, figure,
- footer, header, hgroup, menu, nav, section {
-	display: block;}
-  
-
+body{
+  min-height: 100vh;
+}
 /****************************************************Nav Bar*************************************************/
 
 nav {
@@ -66,8 +60,7 @@ nav {
    color: #04AA6D;
   }
 
- @media screen and (max-width: 746px){
-
+ @media screen and (max-width: 650px){
    .navbar ul {
     display: inline;
    }
@@ -75,39 +68,37 @@ nav {
     display: none;
   }
    .navbar ul > li> a.menu{
-    color: black;
     background-image: url("assets/css/images/bars.svg");
     background-position: center;
     background-repeat: no-repeat;
-    content: '';
     display: block;
     height: 1em;
     width: 1em;
-    text-align: center;
   }
+
   .navbar ul > li> a.menu > span{
     display: none;
   }
-
-  
  }
 
- @media screen and (max-width: 600px){
+ @media screen and (max-width: 746px){
+  .navbar ul{
+    display: inline;
+  }
   .navbar ul > li > a:is(.active){
     display: none;
   }
   
   .navbar ul > li> a.house{
-    color: green;
     background-image: url("assets/css/images/house.svg");
     background-position: center;
     background-repeat: no-repeat;
-    content: '';
     display: block;
     height: 1em;
     width: 1em;
-    text-align: center;
+    /* text-align: center; */
   }
+
   .navbar ul > li> a.active > span{
     display: none;
   }
@@ -146,10 +137,69 @@ nav {
   border: 3px solid #a72537;
  }
 
- .certs{
-  padding: 2em 4em;
-  border: 3px solid #d6c48a;
+ .container{
+  width: 100%;
  }
+
+ .slide-certs{
+  margin: 0 30px;
+  overflow: hidden;
+ }
+
+ #certs{
+  border: 3px solid #d6c48a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+
+ .card{
+   width: 312px;
+   background: #fff;
+   border-radius: 8px;
+   display: block;
+ }
+ .card .image-box{
+    height: 98%;
+    width: 98%;
+ }
+
+ .card .image-box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2px 2px 0 0;
+}
+
+.swiper-button-prev.swiper-navBtn, 
+.swiper-button-next.swiper-navBtn{
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+
+}
+
+.swiper-button-prev.swiper-navBtn::after{
+  font-size: 18px;
+}
+.swiper-button-next.swiper-navBtn::after{
+  font-size: 18px;
+
+}
+
+.swiper-pagination-bullet{
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px){
+  .swiper-button-prev.swiper-navBtn, 
+  .swiper-button-next.swiper-navBtn{
+    display:none;
+   }
+  }
+
 /*************************************************** Footer *************************************************/
 
 footer {
@@ -158,14 +208,13 @@ footer {
   text-align: center;
   list-style:none;
   display: block;
- 
-  
 }
+
 footer ul{
   list-style-type: none;
   margin: 10px 0;
   padding: 0;
-  /* width: 50%; */
+
 }
 
 footer li{
