@@ -11,7 +11,6 @@
   --bg-color: #ffffff;
   --text-color: rgba(36, 36, 39, 0.849);
   --main-color: #358645;
-
 }
 
 body{
@@ -87,19 +86,6 @@ nav{
 
 @media screen and (max-width: 720px){
 
-  .home i{
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 3px;
-    display:block
-  }
-
-  .home span{
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 3px;
-    display:none
-  }
 
   .navbar a{
       font-size: 0.9em;
@@ -109,6 +95,18 @@ nav{
   
 
 @media screen and (max-width: 500px){
+
+  .home i{
+    color: var(--text-color);
+    font-size: 28px;
+    margin-right: 3px;
+    display:block
+  }
+
+  .home i:hover{
+    color: var(--main-color);
+  }
+
   .side > #menu-icon{
     display: block;
   }
@@ -144,7 +142,7 @@ nav{
 
   }
   .navbar.open{
-    right: 2%;
+    right: 1%;
   }
 }
 }
