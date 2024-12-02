@@ -7,6 +7,11 @@
   list-style: none;
 }
 
+html, body{
+  height: 100dvh;
+  /* border: 1px solid red; */
+}
+
 :root{
   --bg-color: #ffffff;
   --text-color: rgba(36, 36, 39, 0.849);
@@ -14,7 +19,9 @@
 }
 
 body{
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
 }
 /****************************************************Nav Bar*************************************************/
 
@@ -153,14 +160,18 @@ nav{
   justify-content: center;
 
  }
- .banner{
+ #banner{
+  margin: 2em;
   padding: 10em 1em;
   align-items: center;
   border: 3px solid #357724;
- 
+  /* flex-grow: 0.5;
+  flex-shrink:0;
+  flex-basis: auto; */
+  flex: 0.9 0 auto;
  }
- banner.name{
-  font-size: 2em;
+ .banner .name{
+  font-size: 1.5em;
  }
 
  .about{
@@ -195,12 +206,12 @@ nav{
   justify-content: center;
 
  }
-
  .card{
    width: 312px;
+   height: 100%;
    background: #fff;
    border-radius: 8px;
-   display: block;
+   /* display: block; */
  }
  .card .image-box{
     height: 98%;
@@ -213,6 +224,8 @@ nav{
   border-radius: 2px 2px 0 0;
 }
 
+
+ /********************************** Carousel *******************************/
 .swiper-button-prev.swiper-navBtn, 
 .swiper-button-next.swiper-navBtn{
   color: #000;
@@ -244,28 +257,27 @@ nav{
 
 /*************************************************** Footer *************************************************/
 
-footer {
-    width: 100%;
-    z-index: 1000;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    float: left;
-    justify-content: space-between;
-    background: var(--text-color);
-    padding: 28px 12%;
-    color: var(--bg-color);
-}
-
-.icons{
+footer{
   display: flex;
-  align-items: center;
-  text-align: center;
+  align-items:center;
+  justify-content: center;
+  border: 2px solid purple;
+  padding: 3em;
+  /* flex-direction: column; */
 }
 
-footer i{
-    color: var(--bg-color);
-    font-size: 28px;
-    margin-right: 3px;
-    display: flex;
+footer .icons{
+  display: flex;
+  /* align-items: stretch; */
+  margin-right: 1.5em;
+  
+}
+
+.icons > li a {
+ font-size: 1.5em;
+ margin: 0.3em;
+}
+
+.copyright{
+  text-transform: uppercase;
 }
