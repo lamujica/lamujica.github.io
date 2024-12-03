@@ -281,3 +281,16 @@ footer .icons{
 .copyright{
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 500px){
+  footer{
+    display: block;
+    text-align: center;
+  }
+
+  footer .icons{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
