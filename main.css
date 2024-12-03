@@ -264,6 +264,7 @@ footer{
   border: 2px solid purple;
   padding: 3em;
   /* flex-direction: column; */
+  background: var(--bg-color);
 }
 
 footer .icons{
@@ -276,10 +277,17 @@ footer .icons{
 .icons > li a {
  font-size: 1.5em;
  margin: 0.3em;
+ color: #666;
 }
+
+.icons > li a:hover {
+  color: var(--main-color);
+ }
 
 .copyright{
   text-transform: uppercase;
+  color: #666;
+  font-weight: 600 ;
 }
 
 @media screen and (max-width: 500px){
