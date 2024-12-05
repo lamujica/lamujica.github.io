@@ -21,6 +21,7 @@ html, body{
 body{
   display: flex;
   flex-direction: column;
+
  
 }
 /****************************************************Nav Bar*************************************************/
@@ -38,6 +39,9 @@ nav{
   background: var(--bg-color);
   padding: 28px 12%;
   transition: all .50s ease;
+  -moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
+  -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+  box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 }
 
 .home{
@@ -47,13 +51,18 @@ nav{
 
 .home i{
   color: var(--main-color);
-  font-size: 28px;
+  font-size: 3em;
   margin-right: 3px;
   display:none
 } 
 
 .navbar{
   display: flex;
+
+}
+
+.navbar li{
+  text-transform: uppercase;
 }
 
 .navbar a{
@@ -63,6 +72,8 @@ nav{
   padding: 5px 0;
   margin: 0px 30px;
   transition: all .50s ease;
+  font-size: 1.2em;
+  
 }
 
 .navbar a:hover{
@@ -131,15 +142,15 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: var(--bg-color);
-    border-radius: 10px;
+    background: rgba(151, 149, 149, 0.89);
+    border-radius: 1em;
     transition: all .05s ease;
   }
 
   .navbar a{
     display: block;
-    margin: 12px 0;
-    padding: 0px 30px;
+    margin: 15px;
+    padding: 0px 20px;
     transition: all 0.5s ease;
   }
 
@@ -149,7 +160,7 @@ nav{
 
   }
   .navbar.open{
-    right: 1%;
+    right: -2%;
   }
 }
 }
@@ -161,7 +172,6 @@ nav{
 
  }
  #banner{
-  margin: 1em;
   padding: 10em 1em;
   align-items: center;
   border: 3px solid #357724;
@@ -170,8 +180,14 @@ nav{
   flex-basis: auto; */
   flex: 0.9 0 auto;
  }
+
+ .banner{
+  margin: 10em;
+  padding: 3em;
+  border: 3px solid #357724;
+ }
  .banner .name{
-  font-size: 1.5em;
+  font-size: 2em;
  }
 
  .about{
@@ -201,12 +217,18 @@ nav{
   object-fit: contain;
   border: 2px solid pink;
   margin: 1em 1em;
+  border-radius: 15%;
   
  }
- .portfolio{
-  padding: 2em 9em;
+ #portfolio{
+  padding: 10em 1em;
   border: 3px solid #a72537;
  }
+
+
+
+
+ /************************* Certs *************************/
 
  .container{
   width: 100%;
@@ -227,7 +249,7 @@ nav{
  }
  .card{
    /* width: 400px; */
-   height: 25em;
+   height: 28em;
    background: #fff;
    border-radius: 8px;
    display: block;
@@ -236,7 +258,6 @@ nav{
     height: 28em;
     /* width: 100%; */
     object-fit: contain;
-   
  }
 
  .card .image-box img{
@@ -245,17 +266,20 @@ nav{
   object-fit: contain;
   border-radius: 2px 2px 0 0;
 }
-
-
  /********************************** Carousel *******************************/
 .swiper-button-prev.swiper-navBtn, 
 .swiper-button-next.swiper-navBtn{
   color: #000;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   background: #fff;
   border-radius: 50%;
+  font-weight: 600;
+}
 
+.swiper-button-prev.swiper-navBtn:hover, 
+.swiper-button-next.swiper-navBtn:hover{
+  color: var(--main-color);
 }
 
 .swiper-button-prev.swiper-navBtn::after{
@@ -263,7 +287,6 @@ nav{
 }
 .swiper-button-next.swiper-navBtn::after{
   font-size: 18px;
-
 }
 
 .swiper-pagination-bullet{
