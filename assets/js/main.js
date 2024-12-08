@@ -19,14 +19,17 @@ var swiper = new Swiper(".slide-certs", {
       0: {
         slidesPerView: 1, 
       },
-      520: {
-        slidesPerView: 2
+      660: {
+        slidesPerView: 2, 
       },
-      768: {
-        slidesPerView: 3, 
+      1200: {
+        slidesPerView: 3
       },
-      1000: {
-        slidesPerView: 4
+      1500: {
+        slidesPerView: 4, 
+      },
+      2000: {
+        slidesPerView: 5
       },
     },
   });
