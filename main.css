@@ -2,21 +2,20 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Source Code Pro", sans-serif;
   text-decoration: none;
   list-style: none;
 }
 
 html, body{
   height: 100dvh;
-  /* border: 1px solid red; */
 }
 
 :root{
   --bg-color: #ffffff;
   --text-color: rgba(36, 36, 39, 0.849);
   --main-color: #7c9c82;
-  /* --bg-color: hsl(49 37% 94%); */
   --typewriterSpeed: 2s;
 }
 
@@ -27,11 +26,9 @@ body{
 /****************************************************Nav Bar*************************************************/
 
 nav{
+  z-index: 1000;
   position: fixed;
   width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
   display: flex;
   align-items: center;
   float: left;
@@ -39,6 +36,7 @@ nav{
   background: var(--bg-color);
   padding: 28px 12%;
   transition: all .50s ease;
+  font-size: 1em;
   -moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
   -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
   box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
@@ -47,23 +45,18 @@ nav{
 .home{
   display: flex;
   align-items:center;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-size: 1.1rem;
-    font-weight: 500;
-  
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;  
 }
 
 .home i{
-  color: var(--main-color);
-  font-size: 3em;
-  margin-right: 3px;
   display:none;
 } 
 
 .navbar{
   display: flex;
-
 }
 
 .navbar li{
@@ -77,8 +70,6 @@ nav{
   padding: 5px 0;
   margin: 0px 30px;
   transition: all .50s ease;
-  font-size: 1em;
-  
 }
 
 .navbar a:hover, .home:hover{
@@ -90,11 +81,10 @@ nav{
   font-size:35px;
   color: var(--text-color);
   cursor: pointer;
-  z-index: 10001;
+  /* z-index: 10001; */
 }
 
 /* Navbar and Menu screen adjustments */
-
 @media screen and (max-width: 1280px){
   nav{
     padding: 14px 2%;
@@ -113,15 +103,12 @@ nav{
 }
 
 @media screen and (max-width: 870px){
-
-
   .navbar a, .home{
       font-size: 0.9em;
       margin: 0px 15px;
   }
-
+}
   
-
 @media screen and (max-width: 640px){
 
   .home i{
@@ -152,7 +139,6 @@ nav{
     top: 100%;
     right: -100%;
     width: 200px;
-    /* height: 27nh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -177,39 +163,36 @@ nav{
     right: -2%;
   }
 }
-}
+
  /************************************** Body *********************************************************/
  
  section{
   display: flex;
   justify-content: center;
+  padding-block: min(30vh, 10rem);
  }
 
  /************************************** Banner **************************************/
  #banner{
-  top: 2em;
-  padding: 10em 1em;
+  position: static;
   align-items: center;
-  /* border: 3px solid #357724; */
-  /* flex-grow: 0.5;
-  flex-shrink:0;
-  flex-basis: auto; */
-  /* flex: 0.9 0 auto; */
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--bg-color);
   border: red 1px solid;
   text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
+  
  }
 
  .banner{
   font-family: "Source Code Pro", sans-serif;
   align-items: center;
-  margin: 6em;
-  padding: 3em;
+  margin: 15em 0;
   /* border: 3px solid #357724; */
 }
 
@@ -245,7 +228,7 @@ h1::after{
 .subtitle{
  color: hsl(0, 0%, 0%/0.7);
  font-size: clamp(0.2rem, 2.5vw, 1.5rem);
- font-weight: 400;
+ font-weight: 300;
  opacity: 0;
  transform: translateY(3rem);
  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
@@ -285,7 +268,7 @@ h1::after{
   margin: 5em;
   padding: 2em;
   }
-  }
+}
 
 
 @media screen and (max-width: 640px){
@@ -304,11 +287,10 @@ h1::after{
   margin: 2em;
   padding: 1.5em;
   }
-  }
+}
 
   
 @media screen and (max-width: 390px){
-  
   #banner{
     padding: 5em, 1em;
   }
@@ -323,13 +305,12 @@ h1::after{
   margin: 2em;
   padding: 1.5em;
   }
-  } 
+} 
 
 
  /* ****************** Blurb/About Me****************** */
-
  .about{
-  padding: 3em 4em;
+  margin: 0 2em;
   /* border: 3px solid #0e0b02; */
   font-size: 1em;
   align-items: center;
@@ -338,39 +319,31 @@ h1::after{
 
  #skills{
   display: flex;
-  padding: 2em 4em;
-  /* border: 2px solid green; */
   background-color: rgba(0, 128, 0, 0.068);
  }
+
  .content{
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
- 
  }
 
  .content img{
   width: 8em;
   height: 8em;
   object-fit: contain;
-  /* border: 2px solid pink; */
   margin: 1em 1em;
   border-radius: 15%;
   
  }
  #portfolio{
-  padding: 10em 1em;
   border: 3px solid #a72537;
   background: rgba(164, 192, 245, 0.979);
  }
 
-
-
-
  /************************* Certs *************************/
-
  .container{
   width: 100%;
  }
@@ -382,14 +355,12 @@ h1::after{
 
  #certs{
   margin: 1em 7em;
-  /* border: 3px solid #d6c48a; */
   display: flex;
   align-items: center;
   justify-content: center;
 
  }
  .card{
-   /* width: 400px; */
    height: 20em;
    /* background: #fff; */
    border-radius: 8px;
@@ -442,7 +413,6 @@ h1::after{
    #certs{
     margin: 0 3em;
     }
-
   }
 
   @media screen and (max-width: 912px){
@@ -452,22 +422,18 @@ h1::after{
   }
 
 /*************************************************** Footer *************************************************/
-
 footer{
   display: flex;
   align-items:center;
   justify-content: center;
   border: 2px solid purple;
-  padding: 3em;
-  /* flex-direction: column; */
+  padding-block: 3em;
   background: var(--bg-color);
 }
 
 footer .icons{
   display: flex;
-  /* align-items: stretch; */
   margin-right: 1.5em;
-  
 }
 
 .icons > li a {
