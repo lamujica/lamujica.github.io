@@ -110,7 +110,6 @@ nav{
 }
   
 @media screen and (max-width: 640px){
-
   .home i{
     color: var(--text-color);
     font-size: 28px;
@@ -165,11 +164,10 @@ nav{
 }
 
  /************************************** Body *********************************************************/
- 
  section{
   display: flex;
   justify-content: center;
-  padding-block: min(30vh, 10rem);
+  padding-block: min(10vh, 10rem);
  }
 
  /************************************** Banner **************************************/
@@ -185,23 +183,31 @@ nav{
   border: red 1px solid;
   text-align: center;
   text-transform: uppercase;
-  color: var(--text-color);
-  
+  color: var(--text-color); 
  }
 
  .banner{
   font-family: "Source Code Pro", sans-serif;
   align-items: center;
   margin: 15em 0;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
   /* border: 3px solid #357724; */
 }
 
 
 h1{
+  justify-content: center;
+  align-items: center;
   position: relative;
-  font-size: clamp(0.2rem, 3vw, 2rem);
+  font-size: clamp(0.2rem, 3vw, 1.5rem);
   font-family: inherit;
   font-weight: 400;
+  width: max-content;
 }
 
 h1::before, h1::after{
@@ -309,6 +315,10 @@ h1::after{
 
 
  /* ****************** Blurb/About Me****************** */
+ #about{
+  border: 3px solid red;
+ }
+ 
  .about{
   margin: 0 2em;
   /* border: 3px solid #0e0b02; */
@@ -319,7 +329,7 @@ h1::after{
 
  #skills{
   display: flex;
-  background-color: rgba(0, 128, 0, 0.068);
+  /* background-color: rgba(0, 128, 0, 0.068); */
  }
 
  .content{
@@ -340,7 +350,7 @@ h1::after{
  }
  #portfolio{
   border: 3px solid #a72537;
-  background: rgba(164, 192, 245, 0.979);
+  /* background: rgba(164, 192, 245, 0.979); */
  }
 
  /************************* Certs *************************/
