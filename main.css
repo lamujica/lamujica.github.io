@@ -364,6 +364,11 @@ h1::after{
   width: 100%;
   border: 1px solid red;
   height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right,
+   transparent, 
+   var(--main-color), 
+   transparent)
  }
 
  .slider .list{
@@ -392,6 +397,10 @@ h1::after{
    } to {
     left: calc(var(--width) * -1);
   }
+ }
+
+ .slider:hover .item{
+  animation-play-state: paused!important;
  }
  
  
