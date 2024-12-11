@@ -27,11 +27,11 @@ body{
   flex-direction: column;
 }
 
-h2{
+h3{
   font-family: var(--main-font);
   padding: 1em 0;
   text-transform: var(--text-presentation);
-  /* font-weight: 600; */
+  font-weight: 600;
   color: var(--text-color);
 }
 
@@ -355,28 +355,46 @@ h1::after{
   align-items: center;
   text-align: justify;
  }
-
+/******************************** Skills & Slider *********************************/
  #skills{
   display: flex;
   /* background-color: rgba(0, 128, 0, 0.068); */
  }
+ .slider{
+  width: 100%;
+  border: 1px solid red;
+  height: var(--height);
+ }
 
- .content{
-  align-items: center;
-  justify-content: center;
+ .slider .list{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity) );
+  position: relative;
  }
 
- .content img{
-  width: 8em;
-  height: 8em;
-  object-fit: contain;
-  margin: 1em 1em;
-  border-radius: 15%;
-  
+ .slider .list .item{
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay:  calc((10s / var(--quantity)) * (var(--position) - 1));
  }
+
+ .slider .list .item img{
+  width: 100%;
+ }
+
+ @keyframes autoRun{
+   from{
+    left: 100%;
+   } to {
+    left: calc(var(--width) * -1);
+  }
+ }
+ 
+ 
  #portfolio{
   border: 3px solid #a72537;
   /* background: rgba(164, 192, 245, 0.979); */
