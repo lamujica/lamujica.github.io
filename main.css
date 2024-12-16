@@ -406,7 +406,7 @@ h1::after{
   object-fit: contain;
  }
 
- @media screen and (max-width: 1350px){
+ @media screen and (max-width: 1410px){
   .middle{
     display: inline-block;
     margin: 0 2em;
@@ -446,7 +446,10 @@ h1::after{
 @media screen and (max-width: 550px){
 
   .middle{
+    display: inline-block;
     margin: 0 1em;
+    align-items: center;
+    justify-content: center;
    }
 
   #about, #skills{
