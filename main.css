@@ -192,7 +192,7 @@ nav{
     box-shadow: 0 4px 4px var(--bg-color);
   }
 
- section:not(#banner, #about, #skills){
+ section:not(#banner, #about){
   display: flex;
   justify-content: center;
   padding-block: min(5vh, 5rem);
@@ -200,14 +200,14 @@ nav{
  }
 
 
- /* About me and skills */
+ /* About me */
  .middle{
   display: flex;
   margin: 0 3em;
   justify-content: center;
  }
 
- #about, #skills{
+ #about{
   -moz-box-shadow:1px 0px 5px rgba(182, 182, 182, 0.75);
   -webkit-box-shadow: 1px 0px 5px rgba(182, 182, 182, 0.75);
   box-shadow: 1px 0px 5px rgba(182, 182, 182, 0.75);
@@ -363,21 +363,7 @@ h1::after{
   align-items: center;
   text-align: justify;
  }
-/******************************** Skills & Slider *********************************/
- #skills{
-  display: flex;
-  /* border: 3px solid #0e0b02; */
-  font-size: 1em;
-  text-align: justify;
-
- }
-
- #skills > div{
-  display: inline-block;
-  width: 100%;
-  justify-content: center;
-
- }
+/********************************  Slider *********************************/
  .slider{
   margin: 0 2em;
   display: flex;
@@ -416,7 +402,7 @@ h1::after{
     align-items: center;
    }
   
-   #about, #skills{
+   #about{
     -moz-box-shadow:1px 0px 5px rgba(182, 182, 182, 0.75);
     -webkit-box-shadow: 1px 0px 5px rgba(182, 182, 182, 0.75);
     box-shadow: 1px 0px 5px rgba(182, 182, 182, 0.75);
