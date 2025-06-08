@@ -472,7 +472,7 @@ h1::after{
    }
 }
 
-/**********************Portfolio/Projects********************/
+/**********************Portfolio********************/
  .container{
   width: 100%;
  } 
@@ -508,9 +508,9 @@ h1::after{
   border-radius: 2px 2px 0 0;
 }
  /************************* Certs *************************/
- .container{
+ /* .container{
   width: 100%;
- }
+ } */
 
  .slide-certs{
   margin: 0 30px;
@@ -523,9 +523,8 @@ h1::after{
   align-items: center;
   justify-content: center;
  }
- .card{
+ /* .card{
    height: 20em;
-   /* background: #fff; */
    border-radius: 8px;
    display: block;
  }
@@ -540,7 +539,7 @@ h1::after{
   height: 100%;
   object-fit: contain;
   border-radius: 2px 2px 0 0;
-}
+} */
 
 
 
