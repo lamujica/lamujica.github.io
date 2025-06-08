@@ -65,7 +65,7 @@ var swiper = new Swiper(".slide-certs", {
         slidesPerView: 4, 
       },
       2000: {
-        slidesPerView: 5
+        slidesPerView: 4
       },
     },
   });
